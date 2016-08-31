@@ -1,0 +1,375 @@
+body {
+    background-image: url("../../img/background/china-green-house-gas-mitigation-natural-gas-for-coal.jpg");
+}
+
+#use {
+    position: fixed;
+    top: 400px;
+    bottom: 0px;
+    left: 50%;
+    width: 400px;
+    margin-left: -200px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: 80px;
+    overflow: hidden;
+}
+
+#use-all {
+    position: fixed;
+    top: 50%;
+    margin-top: -40px;
+    height: 80px;
+    line-height: 80px;
+    color: white;
+    left: 50%;
+    width: 400px;
+    margin-left: -200px;
+    text-align: center;
+}
+
+#use-all::after {
+    content: "ten thousands standard coal equivelant";
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+#use-china {
+    opacity: 0.5;
+    position: fixed;
+    width: 400px;
+    top: 0px;
+    left: 50%;
+    margin-left: -200px;
+}
+
+#use-year {
+    position: absolute;
+    width: 1440px;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -60px;
+    background-color: transparent;
+    transition: margin-left 0.5s;
+    white-space: nowrap;
+}
+
+#use-year div {
+    color: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    height: 30px;
+    text-align: center;
+    width: 80px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: font-size 0.5s, opacity 0.5s;
+    opacity: 0.5;
+}
+
+#use-year div:hover {
+    opacity: 1;
+}
+
+#use-year div.active {
+    opacity: 1;
+    font-size: 30px;
+}
+
+#resource-coal {
+    position: fixed;
+    top: 70%;
+    left: 17%;
+    height: 0px;
+    width: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    transition: height 0.5s, margin-top 0.5s, margin-left 0.5s, width 0.5s;
+    opacity: 0.5;
+}
+
+#resource-coal-amount {
+    position: fixed;
+    text-align: center;
+    left: 17%;
+    width: 400px;
+    margin-left: -200px;
+    margin-top: 10px;
+    color: black;
+    transition: top 0.5s;
+}
+
+#resource-coal-amount::after {
+    content: "ten thousands standard coal equivelant";
+    font-size: 12px;
+    margin-left: 10px;
+    opacity: 1;
+}
+
+#resource-coal-percentage {
+    position: fixed;
+    height: 5px;
+    line-height: 80px;
+    padding-right: 20px;
+    right: 50%;
+    top: 70%;
+    margin-top: -2.5px;
+    margin-right: 200px;
+    color: black;
+    font-size: 60px;
+    text-align: right;
+    background: linear-gradient(to right, black, black);
+    transition: width 0.5s;
+    opacity: 0.5;
+}
+
+#resource-coal-percentage::after {
+    content: "%";
+    font-size: 20px;
+    opacity: 1;
+}
+
+#resource-ng {
+    position: fixed;
+    top: 30%;
+    left: 17%;
+    height: 0px;
+    width: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    transition: height 0.5s, margin-top 0.5s, margin-left 0.5s, width 0.5s;
+    opacity: 0.5;
+}
+
+#resource-ng-amount {
+    position: fixed;
+    text-align: center;
+    left: 17%;
+    width: 400px;
+    margin-left: -200px;
+    margin-top: 10px;
+    color: #69F;
+    transition: top 0.5s;
+}
+
+#resource-ng-amount::after {
+    content: "ten thousands standard coal equivelant";
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+#resource-ng-percentage {
+    position: fixed;
+    height: 5px;
+    line-height: 80px;
+    padding-right: 20px;
+    text-align: right;
+    right: 50%;
+    top: 30%;
+    margin-top: -2.5px;
+    margin-right: 200px;
+    color: #69F;
+    font-size: 60px;
+    transition: width 0.5s;
+    background: linear-gradient(to right, #69F, black 33%);
+    opacity: 0.5;
+}
+
+#resource-ng-percentage::after {
+    content: "%";
+    font-size: 20px;
+    opacity: 1;
+}
+
+#pollution-ch4 {
+    position: fixed;
+    top: 73%;
+    left: 70%;
+    height: 0px;
+    width: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    transition: height 0.5s, margin-top 0.5s, margin-left 0.5s, width 0.5s;
+    opacity: 0.5;
+}
+
+#pollution-ch4-amount {
+    position: fixed;
+    left: 70%;
+    text-align: center;
+    width: 400px;
+    margin-left: -200px;
+    margin-top: 10px;
+    color: white;
+    transition: top 0.5s;
+}
+
+#pollution-ch4-amount::after {
+    content: "ten thousands ton";
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+#pollution-ch4-percentage {
+    position: fixed;
+    height: 80px;
+    left: 50%;
+    top: 73%;
+    margin-top: -77.5px;
+    margin-left: 200px;
+    color: #69F;
+    font-size: 60px;
+    border-bottom: solid 5px rgba(0, 0, 0, 0.5);
+    transition: width 0.5s;
+}
+
+#pollution-co2 {
+    position: fixed;
+    top: 33%;
+    left: 80%;
+    height: 120px;
+    width: 120px;
+    margin-top: -60px;
+    margin-left: -60px;
+    transition: height 0.5s, margin-top 0.5s, margin-left 0.5s, width 0.5s;
+    opacity: 0.5;
+}
+
+#pollution-co2-amount {
+    position: fixed;
+    left: 80%;
+    text-align: center;
+    width: 400px;
+    margin-left: -200px;
+    margin-top: 10px;
+    color: white;
+    transition: top 0.5s;
+}
+
+#pollution-co2-amount::after {
+    content: "ten thousands ton";
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+#pollution-co2-percentage {
+    position: fixed;
+    height: 80px;
+    left: 50%;
+    top: 33%;
+    margin-top: -77.5px;
+    margin-left: 200px;
+    color: #69F;
+    font-size: 60px;
+    border-bottom: solid 5px rgba(0, 0, 0, 0.5);
+    transition: width 0.5s;
+}
+
+#pollution-n2o {
+    position: fixed;
+    top: 88%;
+    left: 65%;
+    height: 120px;
+    width: 120px;
+    margin-top: -60px;
+    margin-left: -60px;
+    transition: height 0.5s, margin-top 0.5s, margin-left 0.5s, width 0.5s;
+    opacity: 0.5;
+}
+
+#pollution-n2o-amount {
+    position: fixed;
+    left: 65%;
+    text-align: center;
+    width: 400px;
+    margin-left: -200px;
+    margin-top: 10px;
+    color: white;
+    transition: top 0.5s;
+}
+
+#pollution-n2o-amount::after {
+    content: "ten thousands ton";
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+#pollution-n2o-percentage {
+    position: fixed;
+    height: 80px;
+    left: 50%;
+    top: 88%;
+    margin-top: -77.5px;
+    margin-left: 200px;
+    color: #69F;
+    font-size: 60px;
+    border-bottom: solid 5px rgba(0, 0, 0, 0.5);
+    transition: width 0.5s;
+}
+
+#calculator {
+    -webkit-appearance: none;
+    position: fixed;
+    top: 50%;
+    bottom: 50%;
+    width: 400px;
+    height: 40px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform-origin: center center;
+    transform: rotate(-90deg);
+    margin-left: -180px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+    transition: opacity 0.5s;
+    border-radius: 20px;
+    opacity: 0.5;
+}
+
+#calculator::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    transition: opacity 0.5s;
+    opacity: 0.5;
+}
+
+#calculator:hover {
+    opacity: 1;
+}
+
+#calculator:hover::-webkit-slider-thumb {
+    opacity: 1;
+}
+
+#carbon-footprint {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    height: 60px;
+    font-size: 60px;
+    color: black;
+}
+
+#carbon-footprint::after {
+    content: "ten thousands ton CO2e";
+    font-size: 12px;
+    opacity: 1;
+    margin-left: 5px;
+}
+
+#carbon-footprint-bg {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 50%;
+    margin-left: 200px;
+    background: linear-gradient(90deg, transparent, red 33%);
+    z-index: 0;
+    transition: opacity 0.5s;
+    opacity: 0;
+}
