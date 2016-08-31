@@ -1,6 +1,9 @@
+// jshint browser: true
+
 var Current_Year = 0;
 var Current_Use = 0;
 var Data;
+var Data_Backup;
 
 var Data_Consumption_R_Base = 150;
 var Data_Consumption_Base = 100000;
@@ -15,15 +18,16 @@ var Data_Pollution_R_N2O_Base = 50;
 
 var Data_Carbon_Footprint_R_Base = 200;
 
+var $ = window.$;
+var Pool = window.Pool;
+
 $(document).ready(
     function () {
-
         Pool.Load("china.green.house.gas.mitigation.natural.gas.for.coal", function (data) {
             Data = JSON.parse(JSON.stringify(data));
             Data_Backup = JSON.parse(JSON.stringify(data));
             Prepare();
         });
-
     }
 );
 
