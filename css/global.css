@@ -9,9 +9,9 @@
     z-index: 1;
 }
 
-    *::after {
-        opacity: 0.5;
-    }
+*::after {
+    opacity: 0.5;
+}
 
 a {
     text-decoration: none;
@@ -25,7 +25,9 @@ body {
     background-size: cover;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
     box-sizing: border-box;
     -ms-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -46,20 +48,24 @@ input, textarea, select {
     line-height: 20px;
 }
 
-    input:hover, textarea:hover, select:hover {
-        box-shadow: 0 0 30px black;
-    }
+input:hover,
+textarea:hover,
+select:hover {
+    box-shadow: 0 0 30px black;
+}
 
-    input:active, textarea:active, select:active {
-        box-shadow: none;
-    }
+input:active,
+textarea:active,
+select:active {
+    box-shadow: none;
+}
 
-    input[type='button'] {
-        padding-left: 0px;
-        padding-right: 0px;
-        text-align: center;
-        background-position: center center;
-    }
+input[type='button'] {
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+    background-position: center center;
+}
 
 select {
     -moz-appearance: none;
@@ -67,14 +73,16 @@ select {
     padding-left: 76px;
 }
 
-optgroup, option {
+optgroup,
+option {
     color: black;
     background-color: white;
 }
 
-    optgroup[disabled], option[disabled] {
-        display: none;
-    }
+optgroup[disabled],
+option[disabled] {
+    display: none;
+}
 
 textarea {
     resize: none;
@@ -91,7 +99,8 @@ table {
     color: #999;
 }
 
-::-webkit-inner-spin-button, ::-webkit-clear-button {
+::-webkit-inner-spin-button,
+::-webkit-clear-button {
     -webkit-appearance: none;
     display: none;
 }
@@ -103,7 +112,7 @@ table {
 
 /* --------------------------------------------------- Global element definition ends --------------------------------------------------- */
 
-body > main {
+body>main {
     position: fixed;
     top: 0px;
     left: 0px;
@@ -113,29 +122,29 @@ body > main {
     z-index: 1;
 }
 
-    body > main > article {
-        position: fixed;
-        top: 0px;
-        bottom: 0px;
-        left: 0px;
-        right: 0px;
-    }
+body>main>article {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
 
-        body > main > article > section {
-            position: absolute;
-        }
+body>main>article>section {
+    position: absolute;
+}
 
-            body > main > article > section[id*='input'] {
-                background-repeat: no-repeat;
-                background-size: 30px 30px;
-                background-position: 25px 25px;
-            }
+body>main>article>section[id*='input'] {
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: 25px 25px;
+}
 
-                body > main > article > section[id*='input'] > * {
-                    background-color: white;
-                    color: #333;
-                }
+body>main>article>section[id*='input']>* {
+    background-color: white;
+    color: #333;
+}
 
-            body > main > article > section[id]:hover {
-                z-index: 300;
-            }
+body>main>article>section[id]:hover {
+    z-index: 300;
+}

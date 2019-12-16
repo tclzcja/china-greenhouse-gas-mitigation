@@ -99,8 +99,6 @@ function Render() {
     /* Rendering Consumption */
 
     var Consumption_All = parseFloat(Data["Resource Consumption"][Current_Year]["Total Consumption"]).toFixed(2);
-    var Ratio_All = Math.sqrt(Consumption_All / Data_Consumption_Base);
-    var R_All = Data_Consumption_R_Base * Ratio_All;
 
     $("#use-all").html(Consumption_All);
 
@@ -119,7 +117,6 @@ function Render() {
     $("#resource-coal-amount").css("top", $(window).outerHeight() * 0.7 + R_Coal).html(Consumption_Coal);
     $("#resource-ng-percentage").html(((Consumption_NG / Consumption_All) * 100).toFixed(2)).css("width", $(window).width() * 0.83 - $(window).width() * 0.5 - 200 - R_NG);
     $("#resource-coal-percentage").html(((Consumption_Coal / Consumption_All) * 100).toFixed(2)).css("width", $(window).width() * 0.83 - $(window).width() * 0.5 - 200 - R_Coal);
-
 
     /* Rendering Pollution */
 

@@ -1,5 +1,3 @@
-// jshint browser: true
-
 var Pool = (function () {
 
     var _body = {};
