@@ -45,6 +45,8 @@ function Prepare() {
 	});
 
 	$(document).on("keydown", function (event) {
+		event.preventDefault();
+
 		if (event.which == 37 && Current_Year > 0) {
 			Current_Year--;
 			Loop_Year();
